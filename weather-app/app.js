@@ -1,4 +1,4 @@
-/*const request = require("request");
+const request = require("request");
 
 const url = "http://api.weatherstack.com/current?access_key=17869b0f7fc9ee56cddbd655c2ccb576&query=Rajkot&units=f";
 
@@ -13,7 +13,7 @@ request({url:url,json:true}, (error,response)=>{
     console.log(`it is currently ${response.body.current.temperature} degree out. it feels like ${response.body.current.feelslike} degree out.`);
     }
 })  
-
+/*
 
 const geocodeURl = "https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoiYWpheW1hcmthbmEiLCJhIjoiY2tta25yeWltMTJ0dzJ3bmFuODN2ZHhocSJ9.aG0kV6Z1BNL5qeIJ1VHiMQ&limit=1";
 
@@ -27,7 +27,8 @@ request({url:geocodeURl,json:true},(error,response)=>{
     const latitude = response.body.features[0].center[1];
     const longitude = response.body.features[0].center[0];
     console.log(latitude,longitude);
-}) */
+})
+/*
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
@@ -50,4 +51,4 @@ if (!address) {
             console.log(forecastData)
         })
     })
-}
+}*/

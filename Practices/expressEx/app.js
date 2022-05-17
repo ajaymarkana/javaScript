@@ -1,18 +1,15 @@
-const express = require("express");
-
+const express = require('express');
 const app = express();
-const port= 8000;
+const port = 8000;
 
-app.get("/",(req,res)=>{
-    res.send("this is homepage of my first express app with ajay");
-});
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-app.get("/about",(req,res)=>{
-    res.send("this is about page of my first express app with ajay");
-});
+app.get("/about",(req,res) => {
+  res.send("this is about");
+})
 
-
-app.listen(port,()=>{
-    console.log(`the application started successfully on port ${port}`);
-});
-
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
